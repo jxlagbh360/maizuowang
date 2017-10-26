@@ -1,0 +1,30 @@
+轮播图列表
+http://m.maizuo.com   /v4/api/billboard/home
+?__t=1508576717833
+
+
+正在热映电影列表
+http://m.maizuo.com    /v4/api/film/now-playing
+?__t=1508593535170&page=1&count=5
+
+地址列表api
+http://m.maizuo.com    /v4/api/city
+?__t=1508742166745
+
+进入详情
+http://m.maizuo.com   /v4/api/film/3863
+?__t=1508750091299
+
+//影院
+http://m.maizuo.com    /v4/api/cinema   ?__t=1508775200887
+
+
+
+	app.use('/v4', httpProxyMiddleware({
+		target: 'http://m.maizuo.com',
+		changeOrigin: true
+	}));
+	app.use('/v2', httpProxyMiddleware({
+		target: 'https://api.growingio.com',
+		changeOrigin: true
+	}));

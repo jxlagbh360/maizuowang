@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="dist/css/swiper.min.css" />
+		<link rel="stylesheet" href="dist/css/style.css" />
+		<link rel="stylesheet" href="dist/css/iconfont.css" />
+		<link rel="stylesheet" href="dist/css/home.css" />
+		<link rel="stylesheet" href="dist/css/filmDetail.css" />
+		<link rel="stylesheet" href="dist/css/cinema.css" />
+		<link rel="stylesheet" href="dist/css/card.css" />
+		<link rel="stylesheet" href="dist/css/market.css" />
+		<link rel="stylesheet" href="dist/css/me.css" />
+	</head>
+
+	<body>
+		
+		<div id="root"></div>
+		
+		<script >
+			function computedWidth(){
+				var screenWidth=document.documentElement.clientWidth;
+				var width=1080;
+				var fontsize= (screenWidth/width)*100+'px';
+				document.documentElement.style.fontSize=fontsize;
+			}
+			
+			computedWidth();
+			//屏幕宽度变化时
+			window.addEventListener('resize', computedWidth);
+			//横竖屏切换时
+			window.addEventListener('orientationchange', computedWidth);
+		</script>
+		<script src="dist/js/swiper.min.js"></script>
+		<script src="dist/js/iscroll-probe.js"></script>
+		<script src="dist/app.js"></script>
+		
+	</body>
+
+</html>

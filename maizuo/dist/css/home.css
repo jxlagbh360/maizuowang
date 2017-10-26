@@ -1,0 +1,295 @@
+#home{
+	/*background: palegoldenrod;*/
+	
+	background: #fff;
+}
+#home .header{
+	width: 100%;
+	height: 2.6rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+#home .header .h-top{
+	width: 100%;
+	height: 1.45rem;
+	display: flex;
+	padding-right:0.25rem ;
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+#home .header .h-top .logo img{
+	width: 3.66rem;
+	height: 100%;
+}
+#home .header .h-top .address{
+	font-size: 0.5rem;
+	line-height: 1.45rem;
+	color: #7c7c7c;
+}
+
+
+#home .header .h-bottom{
+	width: 100%;
+	height: 1.15rem;
+	display: flex;
+	padding:0 0.9rem ;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+}
+#home .header .h-bottom a{
+	flex: 1;
+	height: 100%;
+	display: flex;
+	font-size: 0.44rem;
+	line-height: 0.58rem;
+	text-align: center;
+	color: #7c7c7c;
+	margin-right: 2rem;
+	flex-wrap: wrap;
+	font-weight: blod;
+	
+}
+#home .header .h-bottom a:last-child{
+	margin-right: 0;
+}
+
+
+#home .header .h-bottom a.active{
+	color: #ff5251;
+	border-bottom: 1px solid #ff5251;
+	
+}
+
+
+#home .content{
+	width: 100%;
+	position: absolute;
+	top: 2.65rem;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+#home .content .banner img{
+	width: 100%;
+	height: 2.94rem;
+}
+#home .content .list{
+	width: 100%;
+	padding: 0 0.4rem;
+	background: #fcfcfc;
+	box-sizing: border-box;
+}
+#home .content .item{
+	width: 100%;
+	height: 5.33rem;
+	display: flex;
+	
+}
+#home .content .item .leftPic{
+	width: 2.6rem;
+	height: 100%;
+	position: relative;
+}
+#home .content .item .leftPic img{
+	width: 1.8rem;
+	height: 2.4rem;
+	position: absolute;
+	top: 0.4rem;
+	left: 0.4rem;
+}
+#home .content .item .rightContent{
+	flex: 1;
+	margin-top: 0.5rem;
+	position: relative;
+}
+#home .content .item .rightContent .title{
+	width: 5rem;
+	font-size: 0.6rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #505050;
+}
+#home .content .item .rightContent .des{
+	margin-top: 0.3rem;
+	width: 100%;
+	font-size: 0.45rem;
+	color: #898989;
+}
+#home .content .item .rightContent .cinemaCount{
+	margin-top: 0.3rem;
+	width: 100%;
+	font-size: 0.4rem;
+	color: #bcbcbc;
+}
+#home .content .item .rightContent .activies{
+	width: 100%;
+	height: 1.04rem;
+	font-size: 0.45rem;
+	color: #6c6c6c;
+	padding: 0.15rem ;
+	border-top: 1px dashed #d6d6d6;
+	box-sizing: border-box;
+	display: flex;
+	
+}
+#home .content .item .rightContent .activies span{
+	display: block;
+	height: 0.65rem;
+	padding: 0.06rem 0.2rem;
+	border: 1px solid #ff9350;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: #ff9350;
+	font-size: 0.35rem;
+	margin-right: 0.2rem;
+}
+#home .content .item .rightContent .activies b{
+	flex: 1;
+	font-weight: 100;
+}
+#home .content .item .rightContent .rating{
+	
+	font-size: 0.7rem;
+	color: #ff7d4d;
+	font-weight: 900;
+	position: absolute;
+	top: 0;
+	right: 0.6rem;
+}
+
+#home .content #top{
+	width: 100%;
+	height: 2rem;
+	position: relative;
+}
+#home .content #top img{
+	display: block;
+	width: 1.2rem;
+	height: 1.6rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -0.6rem;
+}
+#home .content #bottom{
+	width: 100%;
+	height: 1rem;
+	text-align: center;
+	font-size: 0.4rem;
+	line-height: 1rem;
+}
+
+/*选择城市开始*/
+#address{
+	background: #fcfcfc;
+	bottom: 0;
+}
+#address.disappear{
+	transform: translate(100%);
+	transition: transform 300ms ease-in;
+}
+
+.example-appear {
+  transform: translateX(100%);
+}
+.example-appear.example-appear-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in;
+}
+
+
+#address .choice-city{
+	width: 100%;
+	height: 1.48rem;
+	font-size: 0.54rem;
+	color: #595959;
+	line-height: 1.48rem;
+	padding-left: 1.2rem;
+	box-sizing: border-box;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#address .choice-city span{
+	display: block;
+	width: 0.6rem;
+	height: 0.6rem;
+	color: #20b4d2;
+	position: absolute;
+	left: 0.4rem;
+}
+#address .add-content{
+	width: 100%;
+	position: absolute;
+	top: 1.5rem;
+	left: 0;
+	bottom: 0;
+}
+#address .add-content p{
+	width: 100%;
+	height: 1.1rem;
+	background: #e0e0e0;
+	padding-left: 0.4rem;
+	box-sizing: border-box;
+	font-size: 0.4rem;
+	line-height: 1.1rem;
+	color: #757575;
+}
+#address .add-content h3{
+	width: 100%;
+	height: 1.5rem;
+	padding-left: 0.4rem;
+	box-sizing: border-box;
+	font-size: 0.46rem;
+	line-height: 1.5rem;
+	color: #ff8561;
+}
+#address .add-content .hot-city{
+	width: 100%;
+	padding-left: 0.4rem;
+	box-sizing: border-box;
+}
+#address .add-content .hot-city li{
+	width: 100%;
+	height: 1.5rem;
+	font-size: 0.46rem;
+	line-height: 1.5rem;
+	color: #4f4f4f;
+	border-bottom: 1px solid #bcbcbc;
+}
+/*选择城市结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
